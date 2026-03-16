@@ -199,6 +199,11 @@ a.treatment-item:hover .treatment-body h3::after { opacity: 1; }
     padding: 5px 14px; border-radius: 20px; white-space: nowrap; margin-top: 4px;
 }
 
+/* DYNAMIC REVIEWS */
+.reviews-dynamic { padding: 100px 0; background: var(--white); }
+.trustindex-container { margin-top: 48px; min-height: 200px; }
+.text-center { text-align: center; }
+
 /* =========================================
    REVIEWS PREVIEW (Homepage)
 ========================================== */
