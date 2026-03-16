@@ -259,21 +259,38 @@ a.treatment-item:hover .treatment-body h3::after { opacity: 1; }
    FOOTER
 ========================================== */
 footer { padding: 48px 0; background: var(--charcoal); color: rgba(255,255,255,0.5); text-align: center; }
-.footer-brand {
-    display: flex; justify-content: center; align-items: baseline;
-    gap: 6px; margin-bottom: 8px;
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.footer-brand .brand-atharva { color: rgba(255,255,255,0.85); }
-.footer-brand .brand-dental { color: var(--sage); }
-.footer-copy { font-size: 0.8rem; }
-.footer-disclaimer {
+.footer-socials {
+    display: flex;
+    gap: 12px;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    color: rgba(255,255,255,0.6);
+    transition: all 0.3s var(--ease);
+}
+.social-icon:hover {
+    background: var(--sage);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+.icon-circle {
     font-size: 0.7rem;
-    color: rgba(255,255,255,0.35);
-    margin-top: 12px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 /* =========================================
