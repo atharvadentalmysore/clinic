@@ -285,7 +285,7 @@ footer { padding: 48px 0; background: var(--charcoal); color: rgba(255,255,255,0
     gap: 20px;
 }
 .footer-top .brand-atharva { color: var(--white); font-weight: 500; }
-.footer-top .brand-dental { color: var(--accent); opacity: 0.9; }
+.footer-top .brand-dental { color: #D4BEA3; }
 
 .footer-brand .brand-logo {
     background: white;
