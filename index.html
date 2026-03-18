@@ -61,9 +61,18 @@
     }
     </script>
 
+    <!-- Preload Hero Image for faster LCP -->
+    <link rel="preload" as="image" href="./dr-kishore.webp" type="image/webp" fetchpriority="high">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+    
+    <!-- Asynchronous Google Fonts to prevent render blocking -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"></noscript>
+    
+    <link rel="preload" href="./style.css" as="style">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -97,7 +106,7 @@
                 <div class="hero-image fade-in delay-1">
                     <picture>
                         <source srcset="./dr-kishore.webp" type="image/webp">
-                        <img src="./dr-kishore.jpg" alt="Dr. Kishore G, Dental Surgeon at Atharva Dental Clinic Mysore" loading="eager" width="600" height="500">
+                        <img src="./dr-kishore.jpg" alt="Dr. Kishore G, Dental Surgeon at Atharva Dental Clinic Mysore" fetchpriority="high" loading="eager" width="600" height="500">
                     </picture>
                 </div>
             </div>
